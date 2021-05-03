@@ -180,3 +180,34 @@
 // https://quizizz.com/join?gc=755687
 
 // link for quiz
+
+
+let username = "eddygrant000";
+let password = "red@123";
+
+function login(user_username, passwd) {
+    if (user_username == username) {
+        if (passwd == password) {
+            return true
+        } else {
+            return false
+        }
+    } else {
+        return false
+    }
+}
+
+function check(status) {
+    if (status == true) {
+        document.write("Login Success");
+    } else {
+        document.write("Username of Password is wrong");
+    }
+}
+
+user_username = prompt("Enter username: "); //eddygrant000
+user_password = prompt("enter password: "); // red@123
+
+let status = login(user_username, user_password);
+
+check(status)
